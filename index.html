@@ -245,7 +245,7 @@
                         <label>TELEFON</label>
                         <input id="phone" type="text" name="phone" required="">
                     </div>
-                    <button type="submit">Visszahívást kérek</button>
+                    <button type="submit" id="submitBTN">Visszahívást kérek</button>
                 </form>
             </div>
         </div>
@@ -264,6 +264,9 @@
 
 <script src="dist/index.js"></script>
 <script>
+    document.querySelector(".form").addEventListener("submit", (e)=> document.getElementById("submitBTN").disabled = true)
+    document.querySelector('.support').style.top
+
     window.onload = function() {
 
         const params = new URLSearchParams(window.location.search);
