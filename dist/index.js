@@ -85,4 +85,4 @@ document.querySelectorAll('.hero6 > div > div > div').forEach(count => {
     catch(error){
         console.error(error)
     }
-}*/ 
+}*/
