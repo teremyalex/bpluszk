@@ -1,0 +1,461 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #172030;
+}
+p{
+    line-height: 25px;
+}
+
+.header{
+    background: url("img/header.jpg") center top no-repeat;
+    background-size: cover;
+    padding: 50px 10px 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0 160px;
+    color:white;
+}
+nav div{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+nav .logo{
+    width: 156px;
+}
+nav ul{
+    background: url("img/noise.png");
+    background-size: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+    padding: 22px 40px;
+    list-style: none;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+nav .search{
+    width: 23px;
+}
+nav .fiok{
+    gap: 20px;
+}
+nav .fiok a{
+    background: url("img/noise.png");
+    background-size: 8%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 22px 25px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+}
+.header > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header > div > div{
+    width: 50%;
+}
+.header h1{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 117px;
+    margin: 0;
+    color:white;
+}
+.header p{
+    color: white;
+    font-size: 20px;
+    opacity: 0.75;
+    margin: 0 0 30px;
+}
+.cta{
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    background: #4CB1BB;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 21px 33px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.cta img{
+    width: 19px;
+    filter: invert(1);
+}
+.video-cta{
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 0 0 15px;
+}
+.video-cta span{
+    padding: 21px 20px 21px 24px;
+    box-sizing: border-box;
+    background: #E8A862;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .velemeny-icons{
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    color:white;
+    font-size: 20px;
+}
+.header .velemeny-icons .icons{
+    width: 178px;
+    margin: 0 12px 0 0;
+}
+.header .velemeny-icons .star{
+    width: 20px;
+    margin: 0 5px 0 0;
+}
+.header .velemeny-icons span{
+    opacity: 0.75;
+    font-size: 16px;
+    align-self: flex-end;
+}
+.header .stat{
+    display: flex;
+    color:white;
+}
+.header .stat div{
+    padding: 0 20px;
+}
+.header .stat div:nth-child(-n+2){
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.header .stat h4{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+.header .stat p{
+    opacity: 0.75;
+    font-size: 20px;
+    margin: 0;
+}
+
+.velemenyek{
+    background:#4CB1BB;
+    padding: 70px 10px;
+    color: white;
+}
+.velemenyek > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.velemenyek > div > div{
+    width: 48%;
+    margin: 0 0 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+}
+.velemenyek .hero{
+    max-width: 183px;
+    border-radius: 50%;
+}
+.velemenyek .aposztrof {
+    position: absolute;
+    right: 0;
+    opacity: 35%;
+}
+.velemenyek .star5{
+    margin: 0 0 10px;
+}
+.velemenyek p{
+    font-style: italic;
+    margin: 0;
+}
+.velemenyek cite{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: normal;
+    font-size: 32px;
+    font-style: normal;
+}
+.about{
+    background: #E4F5F6;
+    padding: 70px 10px;
+}
+.about > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.about .hero{
+    width: 50%;
+    display: block;
+    margin: 0;
+    max-width: 100%;
+}
+.about > div >div{
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.about h3{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 56px;
+    font-weight: normal;
+    margin: 0;
+    position: relative;
+}
+.about p{
+    font-style: italic;
+    opacity: 0.75;
+    margin: 0 0 30px;
+}
+.about .aposztrof {
+    position: absolute;
+    right: 0;
+    opacity: 35%;
+    width: 150px;
+    z-index: 0;
+}
+.media{
+    background: #A4D816;
+    padding: 70px 10px;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.media h3{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 56px;
+    font-weight: normal;
+    margin: 0 0 50px;
+}
+.media > div > div{
+    display: flex;
+    gap: 120px;
+    margin: 0 auto;
+}
+.media img{
+    max-width: 250px;
+}
+
+.blog{
+    background: url("img/blog-bg.jpg") center center no-repeat;
+    background-size: cover;
+    padding: 70px 10px;
+}
+.blog h3{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 56px;
+    font-weight: normal;
+    margin: 0 0 60px;
+    text-align: center;
+}
+.blog > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.blog > div > div{
+    width: 50%;
+}
+.first-post{
+    position: relative;
+}
+.first-post img{
+    width: 100%;
+    display: block;
+    margin: 0 0 20px;
+    border-radius: 25px;
+}
+.first-post .post-cat{
+    background: white;
+    border-radius: 50px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-weight: 700;
+}
+.first-post h4{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+.first-post p{
+    opacity: 0.75;
+}
+.post-cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.post-cta a{
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    color: #172030;
+}
+.post-cta a span{
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    background: #A4D816;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-cta a img{
+    width: 18px;
+    margin: 0;
+}
+.sidebar{
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+}
+.sidebar > div{
+    display: flex;
+    align-items: flex-start;
+}
+.sidebar img{
+    width: 100%;
+    max-width: 180px;
+    border-radius: 10px;
+    margin: 0 20px 0 0;
+}
+.sidebar h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 5px;
+}
+.sidebar .sidebar-cat{
+    background: #F08B52;
+    border-radius: 50px;
+    padding: 5px 12px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    right: 25px;
+    top: 25px;
+    font-weight: 700;
+    color: white;
+}
+.subscribe{
+    background: #F08B52;
+    padding: 70px 10px;
+    color: white;
+}
+.subscribe > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe > div div:first-child{
+    width: 60%;
+}
+.subscribe > div div:last-child{
+    width: 40%;
+    text-align: right;
+}
+.subscribe h3{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 56px;
+    font-weight: normal;
+    margin: 0;
+}
+.subscribe p{
+    max-width: 600px;
+    opacity: 0.75;
+}
+.subscribe a{
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    background: white;
+    color: #F08B52;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 21px 33px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.subscribe a img{
+    width: 18px;
+}
+
+.partner{
+    background: #4CB1BB;
+    padding: 70px 10px;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.partner h3{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 56px;
+    font-weight: normal;
+    margin: 0 0 50px;
+}
+.partner > div > div{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.partner img{
+    max-height: 82px;
+}
