@@ -265,10 +265,8 @@
 <script src="dist/index.js"></script>
 <script>
     document.querySelector(".form").addEventListener("submit", (e)=> document.getElementById("submitBTN").disabled = true)
-    document.querySelector('.support').style.top
 
     window.onload = function() {
-
         const params = new URLSearchParams(window.location.search);
         let input = document.querySelector('input[name="m"]');
         let params_m = params.get('m');
