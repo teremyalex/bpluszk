@@ -1,0 +1,1013 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    background: #F2F2F2;
+    font-family: 'Nunito Sans', sans-serif;
+    margin:0;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+.header{
+    position: relative;
+}
+.header .corner{
+    background: url("img/header-bg.jpg") no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 260px 0;
+    border-radius: 0 0 0 388px;
+    overflow: hidden;
+    color: white;
+    position: relative;
+}
+.header .corner:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 55%, rgba(0,0,0,1) 100%);
+}
+.header > div > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 500ms ease-in-out;
+}
+.header > div > div.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.header > div > div > div{
+    position: relative;
+}
+.header .vese{
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 40%;
+    transform: rotate(50deg);
+    transform-origin: center;
+    animation: vese 20s infinite ease-in-out;
+    z-index: 1;
+}
+.header .vese2{
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 20%;
+    transform: rotate(-80deg);
+    transform-origin: center;
+    animation: vese2 20s infinite ease-in-out;
+    z-index: 1;
+}
+@keyframes vese{
+    0%{transform: rotate(50deg) translate(0);}
+    50%{transform: rotate(60deg) translate(50px, 50px);}
+    100%{transform: rotate(50deg) translate(0);}
+}
+@keyframes vese2{
+    0%{transform: rotate(-80deg) translate(0);}
+    50%{transform: rotate(-70deg) translate(10px, 50px);}
+    100%{transform: rotate(-80deg) translate(0);}
+}
+.header h1{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 70px;
+    max-width: 900px;
+    margin: 0;
+}
+.header p{
+    font-size: 20px;
+    margin: 0 0 30px;
+}
+.cta{
+    display: inline-block;
+    background: linear-gradient(27deg, #D78D1F, #B75C1B);
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 16px 58px;
+    box-sizing: border-box;
+    color: white;
+    text-decoration: none;
+}
+.header-logo{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 128px;
+    opacity: 0.5;
+    z-index: 1;
+}
+.hero2{
+    background: black;
+}
+.hero2-2{
+    background: #f2f2f2;
+    border-radius: 0 388px 0 388px;
+    padding: 70px 10px;
+}
+.hero2 > div > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 500ms ease-in-out;
+}
+.hero2 > div > div.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.hero2 > div > div > div{
+    width: 50%;
+    position: relative;
+}
+.hero2 .hero-img{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.hero2 .vese{
+    position: absolute;
+    top: -28%;
+    left: 25%;
+    width: 70%;
+    transform: rotate(50deg);
+    transform-origin: center;
+    animation: vese 20s infinite ease-in-out;
+    z-index: 1;
+}
+.hero2 .vese2{
+    position: absolute;
+    bottom: -10%;
+    left: 5%;
+    width: 50%;
+    transform: rotate(-80deg);
+    transform-origin: center;
+    animation: vese2 20s infinite ease-in-out;
+    z-index: 3;
+}
+.hero2 h3{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 50px;
+    margin: 0 0 20px;
+}
+.hero2 p{
+    margin: 0 0 20px;
+}
+
+.hero3{
+    background: url("img/hero3-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 200px 0;
+    border-radius: 0 388px 388px 0;
+    position: relative;
+    overflow: hidden;
+}
+.hero3:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 75%, rgba(0,0,0,1) 100%);
+}
+.hero3 > div{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.hero3 h3{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 34px;
+    color:white;
+    margin:0 0 50px;
+    width: 33%;
+    max-width: 300px;
+}
+.hero3 > div > div{
+    width: 33%;
+    max-width: 300px;
+    margin: 0 0 50px;
+    text-align: center;
+    mix-blend-mode: lighten;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 500ms ease-in-out;
+}
+.hero3 > div > div.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.hero3 > div > div .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 120px;
+    font-weight: 500;
+    line-height: 96px;
+    color: black;
+    -webkit-text-stroke: 4px transparent;
+    background: linear-gradient(180deg, #D78D1F, #B75C1B);
+    -webkit-background-clip: text;
+}
+.hero3 > div > div p{
+    color: white;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero4{
+    background: black;
+}
+.hero4-4{
+    background: #f2f2f2;
+    border-radius: 388px 0 388px 0;
+    padding: 150px 10px;
+}
+.hero4 .product{
+    max-width: 1200px;
+    margin: 0 auto 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 500ms ease-in-out;
+}
+.hero4 .product.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.hero4 .product > div{
+    width: 50%;
+    position: relative;
+}
+.hero4 .product .hero-img{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.hero4 .vese{
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    width: 100%;
+    transform: rotate(-110deg);
+    transform-origin: center;
+    animation: vese3 20s infinite ease-in-out;
+    z-index: 1;
+}
+.hero4 .vese2{
+    position: absolute;
+    top: 30%;
+    right: -5%;
+    width: 50%;
+    transform: rotate(-160deg);
+    transform-origin: center;
+    animation: vese4 20s infinite ease-in-out;
+    z-index: 1;
+}
+@keyframes vese3{
+    0%{transform: rotate(-110deg) translate(0);}
+    50%{transform: rotate(-120deg) translate(50px, 50px);}
+    100%{transform: rotate(-110deg) translate(0);}
+}
+@keyframes vese4{
+    0%{transform: rotate(-160deg) translate(0);}
+    50%{transform: rotate(-150deg) translate(50px, 10px);}
+    100%{transform: rotate(-160deg) translate(0);}
+}
+.hero4 .product .logo{
+    width: 166px;
+    margin: 0 0 10px;
+}
+.hero4 h3{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 50px;
+    margin: 0 0 20px;
+}
+.hero4 .product h4{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+.hero4 p{
+    margin: 0;
+}
+.hero4 ul{
+    margin: 20px 0 30px;
+    list-style: none;
+}
+.hero4 ul li{
+    margin: 0 0 20px;
+    position: relative;
+}
+.hero4 ul li:before{
+    content: url("img/check.svg");
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 30px;
+    height: 30px;
+}
+.hero4 h5{
+    font-size: 16px;
+    font-weight: 700;
+    margin:0;
+}
+.hero4 .osszetevok{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero4 .osszetevok h4{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    opacity: 0.5;
+    margin: 0 0 50px;
+    position: relative;
+}
+.hero4 .osszetevok h4:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: calc(50% - 100px);
+    height: 1px;
+    background: black;
+    opacity: 0.5;
+}
+.hero4 .osszetevok h4:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: calc(50% - 100px);
+    height: 1px;
+    background: black;
+    opacity: 0.5;
+}
+.hero4 .osszetevok > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.hero4 .osszetevok > div > div{
+    width: 23%;
+    min-width: 200px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 500ms ease-in-out;
+}
+.hero4 .osszetevok > div > div.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.hero4 .osszetevok img{
+    max-width: 108px;
+    display: block;
+    margin: 0 auto 10px;
+    opacity: 0.75;
+}
+.hero4 .osszetevok h5{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:0;
+    opacity: 0.5;
+}
+.hero4 .osszetevok h6{
+    font-family: 'Crimson Text', serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 10px;
+    opacity: 0.5;
+}
+.hero4 .osszetevok p{
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.hero5{
+    background: url("img/hero5-bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding: 150px 0;
+    border-radius: 388px 0 388px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.hero5:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 55%, rgba(0,0,0,1) 100%);
+}
+.hero5 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.hero5 > div > div{
+    width: 49%;
+    margin: 0 0 50px;
+    position: relative;
+}
+.hero5 .vese{
+    position: absolute;
+    top: -20%;
+    right: -30%;
+    width: 100%;
+    transform: rotate(-110deg);
+    transform-origin: center;
+    animation: vese3 20s infinite ease-in-out;
+    z-index: 0;
+}
+.hero5 .vese2{
+    position: absolute;
+    bottom: -10%;
+    left: 35%;
+    width: 40%;
+    transform: rotate(-80deg);
+    transform-origin: center;
+    animation: vese2 20s infinite ease-in-out;
+    z-index: 0;
+}
+.hero5 h3{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 50px;
+    margin:0 0 30px;
+    position: relative;
+}
+.hero5 p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+.hero5 .list > div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 0 40px;
+    mix-blend-mode: lighten;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 500ms ease-in-out;
+}
+.hero5 .list > div.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+.hero5 .list p{
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0;
+}
+.hero5 > div > div .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 72px;
+    color: black;
+    -webkit-text-stroke: 4px transparent;
+    background: linear-gradient(180deg, #D78D1F, #B75C1B);
+    -webkit-background-clip: text;
+}
+.hero5 .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 0 0 30px;
+    position: relative;
+    z-index: 1;
+}
+.hero5 .grid > div{
+    background: white;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 500ms ease-in-out;
+}
+.hero5 .grid > div.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
+.hero5 .grid p{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 5px 0;
+    line-height: 28px;
+}
+.hero6{
+    background: black;
+}
+.hero6-6{
+    background: #f2f2f2;
+    border-radius: 388px 0 388px 0;
+    padding: 150px 10px;
+}
+.hero6 > div > div{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero6 .velemeny{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 500ms ease-in-out;
+}
+.hero6 .velemeny.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.hero6 .velemeny:nth-child(2){
+    flex-direction: row-reverse;
+}
+.hero6 .velemeny .profil{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+.hero6 .velemeny > div{
+    width: 55%;
+}
+.hero6 .aposztrof {
+    display: block;
+    margin: 0 0 30px;
+    width: 100px;
+}
+.hero6 .velemeny .text{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    font-style: italic;
+    margin: 0 0 30px;
+}
+.hero6 .velemeny .name{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.hero6 .velemeny .city{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.hero7{
+    background: url("img/hero7-bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 0;
+    border-radius: 388px 0 0 388px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.hero7:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 35%, rgba(0,0,0,1) 100%);
+}
+.hero7 > div{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 500ms ease-in-out;
+}
+.hero7 > div.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.hero7 .vese{
+    position: absolute;
+    top: -36%;
+    right: -40%;
+    width: 80%;
+    transform: rotate(-110deg);
+    transform-origin: center;
+    animation: vese3 20s infinite ease-in-out;
+    z-index: 0;
+}
+.hero7 .vese2{
+    position: absolute;
+    bottom: -30%;
+    right: 0;
+    width: 50%;
+    transform: rotate(-80deg);
+    transform-origin: center;
+    animation: vese2 20s infinite ease-in-out;
+    z-index: 2;
+}
+.hero7 > div > div{
+    width: 48%;
+    margin: 0 0 50px;
+    position: relative;
+}
+.hero7 > div .hero-img{
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.hero7 h3{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 50px;
+    margin:0 0 30px;
+}
+.hero7 p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+.hero7 .list > div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 0 40px;
+}
+.hero7 .list p{
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0;
+}
+.hero7 > div > div .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 72px;
+    color: black;
+    -webkit-text-stroke: 4px transparent;
+    background: linear-gradient(180deg, #D78D1F, #B75C1B);
+    -webkit-background-clip: text;
+    mix-blend-mode: lighten;
+}
+.hero7 .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 0 0 30px;
+}
+.hero7 .grid > div{
+    background: white;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+.hero7 .grid p{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 5px 0;
+    line-height: 28px;
+}
+
+.hero8{
+    background: black;
+    position: relative;
+}
+.hero8 .corner{
+    border-radius: 0 388px 0 0;
+    background: #f2f2f2;
+    position: relative;
+}
+.hero8 .corner > div{
+    padding: 150px 10px;
+    position: relative;
+}
+.hero8 .vese{
+    position: absolute;
+    top: -4%;
+    left: 10%;
+    width: 25%;
+    transform: rotate(-110deg);
+    transform-origin: center;
+    animation: vese 20s infinite ease-in-out;
+    z-index: 1;
+}
+.hero8 > div > div > div{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.hero8 h3{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.hero8 p{
+    margin: 0 0 150px;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.hero8 > div > div > div > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.hero8 > div > div > div > div > div{
+    background: url("img/product-card.png") no-repeat center center;
+    background-size: cover;
+    margin: 0 0 90px;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 32%;
+    min-width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 20px rgba(0,0,0,0.15);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 500ms ease-in-out;
+}
+.hero8 > div > div > div > div > div.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.hero8 img{
+    width: 100%;
+    display: block;
+    margin: -100px auto 25px;
+}
+.hero8 .product-name{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.hero8 ul{
+    margin: 0 0 20px;
+    list-style: none;
+    padding: 0 0 0 30px;
+    font-size: 14px;
+}
+.hero8 ul li{
+    margin: 0 0 10px;
+    position: relative;
+    color:#555;
+}
+.hero8 ul li:before {
+    content: url(img/check.svg);
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+}
+.hero8 .product-cta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 0;
+}
+.hero8 .cta{
+    font-size: 18px;
+    padding: 10px 24px;
+}
+.hero8 .product-cta .product-price{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer-logo {
+    text-align: center;
+}
+.footer-logo img{
+    display: block;
+    margin: 0 auto 65px;
+}
+@media (max-width: 1360px){
+
+    .header .corner {
+        border-radius: 0 0 0 200px;
+    }
+    .hero2-2 {
+        border-radius: 0 200px 0 200px;
+    }
+    .hero3 {
+        border-radius: 0 200px 200px 0;
+    }
+    .hero4-4 {
+        border-radius: 200px 0 200px 0;
+    }
+    .hero5 {
+        border-radius: 200px 0 200px 0;
+    }
+    .hero6-6 {
+        border-radius: 200px 0 200px 0;
+    }
+    .hero7 {
+        border-radius: 200px 0 0 200px;
+    }
+    .hero8 .corner  {
+        border-radius: 0 200px 0 0;
+    }
+}
+@media (max-width: 500px){
+.header .corner {
+    background: url(img/header-bg.jpg) no-repeat 75%;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 123px 0;
+    border-radius: 0 0 0 100px;
+}
+.header .vese{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    transform: rotate(50deg) scale(1.5);
+    transform-origin: center;
+    animation: vese 20s infinite ease-in-out;
+    z-index: 1;
+}
+.header .vese2{
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    width: 40%;
+    transform: rotate(-80deg);
+    transform-origin: center;
+    animation: vese2 20s infinite ease-in-out;
+    z-index: 1;
+}
+.header h1 {
+    font-size: 40px;
+}
+.hero2-2 {
+    background: #f2f2f2;
+    border-radius: 0 100px 0 100px;
+    padding: 70px 10px;
+}
+.hero2 > div > div > div {
+    width: 100%;
+}
+.hero2 .hero-img {
+    width: 60%;
+}
+.hero2 h3 {
+    font-size: 40px;
+}
+.hero3 {
+    background: url(img/hero3-bg.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 100px 0;
+    border-radius: 0 100px 100px 0;
+}
+.hero3 h3 {
+    width: 50%;
+    font-size: 30px;
+}
+.hero3 > div > div {
+    width: 50%;
+}
+.hero4-4 {
+    border-radius: 100px 0 100px 0;
+    padding: 100px 10px;
+}
+.hero4 .product > div {
+    width: 100%;
+}
+.hero4 .product img {
+    width: 50%;
+    margin: 0 auto 25px;
+}
+.hero4 h3 {
+    font-size: 40px;
+}
+.hero5 {
+    background: url(img/hero5-bg.jpg) no-repeat 75% center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 100px 0;
+    border-radius: 100px 0 100px 0;
+}
+.hero5 > div > div {
+    width: 100%;
+}
+.hero5 .list p {
+    font-size: 26px;
+}
+.hero5 .grid {
+    gap: 15px;
+}
+.hero5 .grid p {
+    font-size: 18px;
+    line-height: 18px;
+}
+.hero6-6 {
+    border-radius: 100px 0 100px 0;
+    padding: 100px 10px;
+}
+.hero6 .velemeny .profil {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.hero6 .velemeny > div {
+    width: 100%;
+}
+.hero7 {
+    background: url("img/hero7-bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 100px 0;
+    border-radius: 100px 0 0 100px;
+}
+.hero7 > div > div {
+    width: 100%;
+    margin: 0 0 50px;
+}
+.hero7 > div img {
+    width: 100%;
+}
+.hero8 .corner {
+    border-radius: 0 100px 0 0;
+}
+.hero8 .corner > div{
+    padding: 100px 10px;
+}
+.hero8 .vese {
+    top: -2%;
+    left: 0;
+    width: 55%;
+}
+.hero8 h3 {
+    font-size: 40px;
+}
+.hero8 p {
+    font-size: 18px;
+}
+}
+@media (max-width: 360px){
+    .hero5 .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
